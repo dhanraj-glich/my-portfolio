@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            background-color: bisque;
+
+            padding: 0px;
+            margin: 0px;
+
+
+        }
+
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* Hero Section */
+
+        @media (max-width: 700px) {
+
+            .hero_section,
+            .about {
+                flex-direction: column;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .hero_section {
+
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            padding: 35px;
+
+        }
+
+        .hero_section>* {
+            flex: 1;
+        }
+
+        .hero_text {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            height: auto;
+            padding: 35px;
+        }
+
+        .image {
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+
+        }
+
+        .image img,
+        .about_image img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .button button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            background-color: brown;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .button button:hover {
+            opacity: 0.85;
+        }
+
+        .button a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 6px;
+            background-color: brown;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .button a:hover {
+            opacity: 0.85;
+        }
+
+        /* About me section */
+        .about {
+            display: flex;
+            flex-direction: row;
+            padding: 35px;
+        }
+
+        .about_text {
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+            flex-direction: column;
+            margin: 15px;
+        }
+
+        /* Skills Section */
+
+        .skills_section {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            padding: 35px;
+
+        }
+
+        /* Contact Section */
+
+        .contact_section {
+            display: flex;
+            flex-direction: column;
+            padding: 35px;
+
+        }
+
+        /* footer */
+
+        .footer {
+            padding: 35px;
+            background-color: brown;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <main>
+        <section class="hero_section">
+
+            <div class="hero_text">
+                <div class="hero-heading">
+                    <h1>Hi, I'm Dhanraj</h1>
+                </div>
+
+                <div class="sub-heading">
+                    <h2>A Computer Science student learning to build things for the web.</h2>
+                </div>
+
+                <div class="button">
+                    <a href="#skills">View My Work</a>
+                    <a href="#contact">Get in touch</a>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="https://img.magnific.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?semt=ais_test_b&w=740&q=80"
+                    alt="Person working on code on a computer">
+            </div>
+
+        </section>
+        <!-- ABOUT ME SECTION -->
+
+        <section class="about">
+
+
+
+            <div class="about_image_div">
+
+                <h2>About me</h2>
+                <div class="about_image"><img
+                        src="https://media.istockphoto.com/id/2170578930/photo/about-me.jpg?s=612x612&w=0&k=20&c=rLsmKZUGN35N0u6me1QDbVi6q6ewvncCRhEprrXJe98="
+                        alt=""></div>
+
+            </div>
+
+            <section class="about_text">
+
+                <p>I'm a college student with a growing interest in web development
+                    and building software products. I'm learning by doing — picking
+                    real projects, breaking things, and figuring out how they work.</p>
+
+
+                <p>Right now, I'm focused on:</p>
+                <ul>
+                    <li>Write clean HTML and CSS</li>
+                    <li>Learn JavaScript fundamentals</li>
+                    <li>Build and ship small projects</li>
+                </ul>
+
+                <p>When I'm not coding, I'm usually researching ideas for my next
+                    project or learning something new about design and tech.</p>
+
+
+            </section>
+
+
+        </section>
+
+        <!-- Skills Section -->
+
+        <section class="skills_section" id="skills">
+            <h2>My skills</h2>
+
+            <div class="skill_item">
+
+                <h3>HTML</h3>
+                <p>Structuring content the right way</p>
+
+            </div>
+
+            <div class="skill_item">
+                <h3>CSS</h3>
+                <p>Styling, layout, and responsive design</p>
+            </div>
+
+            <div class="skill_item">
+                <h3>JavaScript</h3>
+                <p>Adding interactivity (currently learning)</p>
+            </div>
+
+            <div class="skill_item">
+                <h3>Git & GitHub</h3>
+                <p>Version control basics</p>
+            </div>
+
+
+        </section>
+
+        <address class="contact_section" id="contact">
+            <h2>Let's connect</h2>
+            <p>I'm always open to feedback, collaboration, or just talking about
+                web dev and building things.
+            </p>
+
+            <div class="contact">
+                <p>Email: <a href="">dhanrajambhore7@gmail.com</a></p>
+                <p>GitHub: <a href="">github.com/dhanraj-glich</a></p>
+                <p>LinkedIn: <a href="">linkedin.com/in/dhanrajambhore</a></p>
+            </div>
+        </address>
+
+        <footer class="footer">
+            <p>© 2026 Dhanraj Ambhore. Built with HTML & CSS.</p>
+        </footer>
+
+
+    </main>
+</body>
+
+</html>
